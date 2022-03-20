@@ -125,7 +125,7 @@ section .pokemon-img img {
 
 section .pokemon-img p {
   position: absolute;
-  font-size: 5vw;
+  font-size: 6vw;
   bottom: 0;
   left: 0;
   letter-spacing: 7px;
@@ -275,8 +275,13 @@ section .data .evolution-chain > div {
   color: #EA4C89;
 }
 
+.links a .fa-behance:hover {
+  color: #053EFF;
+}
+
 .bottom {
   padding-left: 1rem;
+  padding-bottom: 1rem;
   display: none;
 }
 
