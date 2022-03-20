@@ -307,7 +307,7 @@ section .data .evolution-chain > div {
     display: block;
   }
   * .poke-back {
-    width: 70%;
+    width: 40%;
   }
 }
 /*# sourceMappingURL=pokeapi.css.map */
