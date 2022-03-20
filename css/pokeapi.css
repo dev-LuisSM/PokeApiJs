@@ -257,7 +257,7 @@ section .data .evolution-chain > div {
   position: fixed;
   top: -10%;
   left: -10%;
-  width: 30%;
+  width: 40%;
   z-index: 0;
   background-color: transparent;
 }
