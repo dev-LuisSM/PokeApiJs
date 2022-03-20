@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+  transition: all 0.3s;
+}
+
+body {
+  background-color: #F6F8FC;
+}
+
+header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  background-color: transparent;
+}
+
+header > svg {
+  width: 8rem;
+  height: fit-content;
+  background: transparent;
+}
+
+header > svg path {
+  fill: #f0f0f0;
+}
+
+header .search {
+  min-width: 60%;
+  position: relative;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+header .search input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 15px 1rem;
+  position: relative;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.07));
+  background-color: #f0f0f0;
+}
+
+header .search input:focus {
+  outline: none;
+}
+
+header .search button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  right: 2rem;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+  z-index: 2;
+  background-color: #ee1515;
+  border: none;
+}
+
+header .search button > svg {
+  width: 20px;
+  background-color: transparent;
+}
+
+header .search button:hover {
+  background-color: #565E6A;
+}
+
+header .search button:hover svg path {
+  fill: #FDC932;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 90%;
+  min-height: 100vh;
+  padding: 6rem 3rem 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+section img {
+  position: relative;
+  background-color: transparent;
+  z-index: 9;
+}
+
+section > article {
+  min-height: 80vh;
+}
+
+section .pokemon-img {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .pokemon-img img {
+  width: 60%;
+  padding-bottom: 1rem;
+}
+
+section .pokemon-img p {
+  position: absolute;
+  font-size: 5vw;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 7px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+section .data {
+  width: 40%;
+  background-color: #f0f0f0;
+  padding: 2rem 2rem 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.2));
+}
+
+section .data > p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+section .data .title {
+  text-align: center;
+}
+
+section .data > div {
+  margin-bottom: 1rem;
+}
+
+section .data .info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section .data .info > div {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+  text-align: center;
+  color: #525252;
+  font-weight: 500;
+}
+
+section .data .info > div p {
+  font-size: smaller;
+  color: #9b9b9b;
+}
+
+section .data .info > div:nth-child(3) {
+  padding: 0;
+}
+
+section .data .info hr {
+  border: none;
+  border-right: 1px solid #d9d9d9;
+}
+
+section .data .types > p {
+  font-size: small;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 0.25rem 1rem;
+  background-color: #565E6A;
+  color: #f0f0f0;
+}
+
+section .data .description {
+  font-size: small;
+  text-align: justify;
+}
+
+section .data .stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .data .stats progress {
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 0.5rem;
+}
+
+section .data .stats progress::-webkit-progress-bar {
+  background-color: var(--bar, #dddddd);
+  border-radius: 0.4rem;
+}
+
+section .data .stats progress::-webkit-progress-value {
+  background-color: var(--val, #646464);
+  border-radius: 0.4rem;
+}
+
+section .data .stats > div {
+  font-size: small;
+}
+
+section .data .stats > div:nth-child(1) {
+  padding-right: 10px;
+  border-right: 1px solid #d9d9d9;
+  font-weight: 600;
+}
+
+section .data .stats > div:nth-child(2) {
+  padding: 0 10px;
+}
+
+section .data .stats > div:nth-child(3) {
+  flex: 1;
+}
+
+section .data .evolution-chain {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: small;
+  text-align: center;
+}
+
+section .data .evolution-chain > div {
+  display: none;
+}
+
+.poke-back {
+  opacity: 40%;
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  width: 30%;
+  z-index: 0;
+  background-color: transparent;
+}
+
+.links a > i {
+  font-size: x-large;
+  color: #f0f0f0;
+}
+
+.links a .fa-github:hover {
+  color: #2c2c2c;
+}
+
+.links a .fa-dribbble:hover {
+  color: #EA4C89;
+}
+
+.bottom {
+  padding-left: 1rem;
+  display: none;
+}
+
+.top {
+  display: block;
+}
+
+@media screen and (max-width: 1060px) {
+  * section {
+    flex-direction: column;
+    padding: 6rem 0 1rem;
+  }
+  * section article {
+    min-height: auto;
+    min-width: 100%;
+  }
+  * .top {
+    display: none;
+  }
+  * .bottom {
+    display: block;
+  }
+}
+/*# sourceMappingURL=pokeapi.css.map */
