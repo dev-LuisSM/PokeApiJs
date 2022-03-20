@@ -163,7 +163,6 @@ section .data .info {
 }
 
 section .data .info > div {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -257,7 +256,7 @@ section .data .evolution-chain > div {
   position: fixed;
   top: -10%;
   left: -10%;
-  width: 40%;
+  width: 35%;
   z-index: 0;
   background-color: transparent;
 }
@@ -298,11 +297,17 @@ section .data .evolution-chain > div {
     min-height: auto;
     min-width: 100%;
   }
+  * section .pokemon-img p {
+    font-size: 10vw;
+  }
   * .top {
     display: none;
   }
   * .bottom {
     display: block;
+  }
+  * .poke-back {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=pokeapi.css.map */

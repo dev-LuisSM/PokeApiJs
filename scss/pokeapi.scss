@@ -162,7 +162,6 @@ section{
             display: flex;
             justify-content: space-evenly;
             > div{
-                padding: 0 1rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -257,7 +256,7 @@ section{
     position: fixed;
     top: -10%;
     left: -10%;
-    width: 40%;
+    width: 35%;
     z-index: 0;
     background-color: transparent;
 }
@@ -298,6 +297,9 @@ section{
                 min-height: auto;
                 min-width: 100%;
             }
+            .pokemon-img p{
+                font-size: 10vw;
+            }
         }
 
         .top{
@@ -305,6 +307,10 @@ section{
         }
         .bottom{
             display: block;
+        }
+
+        .poke-back{
+            width: 70%;
         }
     }
 }
