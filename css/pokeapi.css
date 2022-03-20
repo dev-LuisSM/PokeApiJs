@@ -298,7 +298,7 @@ section .data .evolution-chain > div {
     min-width: 100%;
   }
   * section .pokemon-img p {
-    font-size: 10vw;
+    font-size: 8.5vw;
   }
   * .top {
     display: none;
@@ -307,7 +307,7 @@ section .data .evolution-chain > div {
     display: block;
   }
   * .poke-back {
-    width: 40%;
+    width: 41%;
   }
 }
 /*# sourceMappingURL=pokeapi.css.map */
