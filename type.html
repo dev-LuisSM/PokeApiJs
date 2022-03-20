@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pokedex - LaunchX</title>
-    <link rel="stylesheet" href="./css/pokeapi.css">
+    <link rel="stylesheet" href="./css/types.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="icon" href="./img/pokeball-button.svg">
 </head>
-
 <body>
     <svg class="poke-back" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M0 90C0 40.2944 40.2944 0 90 0C139.706 0 180 40.2944 180 90C180 139.706 139.706 180 90 180C40.2944 180 0 139.706 0 90ZM20.7089 100C25.5612 133.923 54.7353 160 90 160C125.265 160 154.439 133.923 159.291 100H118.293C114.174 111.652 103.062 120 90 120C76.938 120 65.8251 111.652 61.7068 100H20.7089ZM159.291 80C154.439 46.0771 125.265 20 90 20C54.7353 20 25.5612 46.0771 20.7089 80H61.7068C65.8251 68.3481 76.938 60 90 60C103.062 60 114.174 68.3481 118.293 80H159.291ZM90 100C95.523 100 100 95.523 100 90C100 84.477 95.523 80 90 80C84.477 80 80 84.477 80 90C80 95.523 84.477 100 90 100Z"
-            fill="#FFF" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 90C0 40.2944 40.2944 0 90 0C139.706 0 180 40.2944 180 90C180 139.706 139.706 180 90 180C40.2944 180 0 139.706 0 90ZM20.7089 100C25.5612 133.923 54.7353 160 90 160C125.265 160 154.439 133.923 159.291 100H118.293C114.174 111.652 103.062 120 90 120C76.938 120 65.8251 111.652 61.7068 100H20.7089ZM159.291 80C154.439 46.0771 125.265 20 90 20C54.7353 20 25.5612 46.0771 20.7089 80H61.7068C65.8251 68.3481 76.938 60 90 60C103.062 60 114.174 68.3481 118.293 80H159.291ZM90 100C95.523 100 100 95.523 100 90C100 84.477 95.523 80 90 80C84.477 80 80 84.477 80 90C80 95.523 84.477 100 90 100Z" fill="#FFF"/>
     </svg>
-
+        
     <header>
         <svg width="333" height="108" viewBox="0 0 333 108" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -27,7 +23,8 @@
         </svg>
 
         <div class="search">
-            <input type="text" placeholder="Pokémon name/id" id="pokeName" name="pokeName" spellcheck="false">
+            <input type="text" placeholder="Pokémon type" id="pokeName"
+                name="pokeName" spellcheck="false">
             <button id="change">
                 <svg viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -37,128 +34,46 @@
             </button>
         </div>
         <div class="links top">
-            <a href="/type.html">
-                <svg class="fa-poke" width="24" height="24" viewBox="0 0 31 31" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M15.9537 30.4562C23.5875 30.4562 29.9029 24.8685 30.9536 17.5995H21.1506C20.3023 19.6127 18.295 21.0276 15.9538 21.0276C13.6126 21.0276 11.6053 19.6127 10.757 17.5995H0.953855C2.00449 24.8685 8.31989 30.4562 15.9537 30.4562ZM21.151 13.3138H30.9537C29.9035 6.04438 23.5879 0.456177 15.9537 0.456177C8.31954 0.456177 2.0039 6.04438 0.953708 13.3138H10.7566C11.6046 11.3002 13.6122 9.88478 15.9538 9.88478C18.2953 9.88478 20.3029 11.3002 21.151 13.3138ZM0.800323 15.4562L0.800335 15.4374V15.4749L0.800323 15.4562ZM15.8938 18.7114C17.7185 18.7114 19.1977 17.2471 19.1977 15.4409C19.1977 13.6346 17.7185 12.1704 15.8938 12.1704C14.069 12.1704 12.5898 13.6346 12.5898 15.4409C12.5898 17.2471 14.069 18.7114 15.8938 18.7114Z"
-                        fill="#f0f0f0" />
-                </svg></a>
+            <a href="/index.html">
+            <svg class="fa-poke" width="24" height="24" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9537 30.4562C23.5875 30.4562 29.9029 24.8685 30.9536 17.5995H21.1506C20.3023 19.6127 18.295 21.0276 15.9538 21.0276C13.6126 21.0276 11.6053 19.6127 10.757 17.5995H0.953855C2.00449 24.8685 8.31989 30.4562 15.9537 30.4562ZM21.151 13.3138H30.9537C29.9035 6.04438 23.5879 0.456177 15.9537 0.456177C8.31954 0.456177 2.0039 6.04438 0.953708 13.3138H10.7566C11.6046 11.3002 13.6122 9.88478 15.9538 9.88478C18.2953 9.88478 20.3029 11.3002 21.151 13.3138ZM0.800323 15.4562L0.800335 15.4374V15.4749L0.800323 15.4562ZM15.8938 18.7114C17.7185 18.7114 19.1977 17.2471 19.1977 15.4409C19.1977 13.6346 17.7185 12.1704 15.8938 12.1704C14.069 12.1704 12.5898 13.6346 12.5898 15.4409C12.5898 17.2471 14.069 18.7114 15.8938 18.7114Z" fill="#f0f0f0"/>
+            </svg></a>
             <a href="https://github.com/dev-LuisSM/PokeApiJs" target="blank"><i class="fab fa-github"></i></a>
             <a href="https://dribbble.com/shots/17616780-Pok-dex" target="blank"><i class="fab fa-dribbble"></i></a>
-            <a href="https://www.behance.net/gallery/104011053/Pokdex/modules/597809185"><i
-                    class="fab fa-behance"></i></a>
+            <a href="https://www.behance.net/gallery/104011053/Pokdex/modules/597809185"><i class="fab fa-behance"></i></a>
         </div>
     </header>
 
-    <section class="main">
-        <article class="pokemon-img">
-            <img src="./img/pokeball.png" alt="Pokeball" id="pokeImg">
-            <p id="name"></p>
-        </article>
-        <article class="data">
-            <!-- Types -->
-            <div class="types info">
-                <p id="type-0"> Type 0 </p>
-                <p id="type-1"> Type 1 </p>
-            </div>
-
-            <!-- Weight, Height and Moves -->
-            <p class="title">About</p>
-            <div class="info">
-                <div>
-                    <span></span>
-                    <div>
-                        <img src="./img/scale.svg" alt="Scale weight image">
-                        <span id="pokm-weight"> -- Kg</span>
-                    </div>
-                    <p>Weight</p>
-                </div>
-                <hr>
-                <div>
-                    <span></span>
-                    <div>
-                        <img src="./img/ruler.svg" alt="Ruler image">
-                        <span id="pokm-height"> -- m</span>
-                    </div>
-                    <p>Height</p>
-                </div>
-                <hr>
-                <div>
-                    <span id="pokm-move-0"> Move 0 </span>
-                    <span id="pokm-move-1"> Move 1 </span>
-                    <p>Moves</p>
-                </div>
-            </div>
-
-            <!-- Description -->
-            <div class="description">
-                <p id="dscrpt"> Description of the Pokémon </p>
-            </div>
-
-            <!-- Stats -->
-            <p class="title">Base Stats</p>
-            <div class="stats">
-                <div class="labels" id="labels">
-                    <p>HP</p>
-                    <p>ATK</p>
-                    <p>DEF</p>
-                    <p>SATK</p>
-                    <p>SDEF</p>
-                    <p>SPD</p>
-                </div>
-
-                <div id="numbers">
-                    <p id="hp">---</p>
-                    <p id="attack">---</p>
-                    <p id="defense">---</p>
-                    <p id="s-attack">---</p>
-                    <p id="s-defense">---</p>
-                    <p id="speed">---</p>
-                </div>
-
-                <div>
-                    <progress max="200" value="0"></progress>
-                    <progress max="200" value="0"></progress>
-                    <progress max="200" value="0"></progress>
-                    <progress max="200" value="0"></progress>
-                    <progress max="200" value="0"></progress>
-                    <progress max="200" value="0"></progress>
-                </div>
-            </div>
-
-            <p class="title">Evolution Chain</p>
-            <div class="evolution-chain" id="evolution-chain">
-                <div id="chain1">
-                    <img src="" alt="Pokemon: Evolution Chain #1">
-                    <p>Evolution 0</p>
-                </div>
-                <div id="chain2">
-                    <img src="" alt="Pokemon: Evolution Chain #1">
-                    <p>Evolution 1</p>
-                </div>
-                <div id="chain3">
-                    <img src="" alt="Pokemon: Evolution Chain #1">
-                    <p>Evolution 2</p>
-                </div>
-            </div>
-        </article>
+    <section class="cards" data-container>
     </section>
+
+    <template data-template>
+        <div class="card">
+            <img src="" alt="" data-image>
+            <div>
+                <span class="number" data-number>#000</span>
+                <p data-name>Pokemon name</p>
+                <div class="types">
+                    <span data-t0>Type 0</span>
+                    <span data-t1>Type 1</span>
+                </div>
+            </div>
+        </div>
+    </template>
+
     <div class="links bottom">
-        <a href="/type.html">
-            <svg class="fa-poke" width="24" height="24" viewBox="0 0 31 31" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.9537 30.4562C23.5875 30.4562 29.9029 24.8685 30.9536 17.5995H21.1506C20.3023 19.6127 18.295 21.0276 15.9538 21.0276C13.6126 21.0276 11.6053 19.6127 10.757 17.5995H0.953855C2.00449 24.8685 8.31989 30.4562 15.9537 30.4562ZM21.151 13.3138H30.9537C29.9035 6.04438 23.5879 0.456177 15.9537 0.456177C8.31954 0.456177 2.0039 6.04438 0.953708 13.3138H10.7566C11.6046 11.3002 13.6122 9.88478 15.9538 9.88478C18.2953 9.88478 20.3029 11.3002 21.151 13.3138ZM0.800323 15.4562L0.800335 15.4374V15.4749L0.800323 15.4562ZM15.8938 18.7114C17.7185 18.7114 19.1977 17.2471 19.1977 15.4409C19.1977 13.6346 17.7185 12.1704 15.8938 12.1704C14.069 12.1704 12.5898 13.6346 12.5898 15.4409C12.5898 17.2471 14.069 18.7114 15.8938 18.7114Z"
-                    fill="#f0f0f0" />
+        <a href="/index.html">
+            <svg class="fa-poke" width="24" height="24" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9537 30.4562C23.5875 30.4562 29.9029 24.8685 30.9536 17.5995H21.1506C20.3023 19.6127 18.295 21.0276 15.9538 21.0276C13.6126 21.0276 11.6053 19.6127 10.757 17.5995H0.953855C2.00449 24.8685 8.31989 30.4562 15.9537 30.4562ZM21.151 13.3138H30.9537C29.9035 6.04438 23.5879 0.456177 15.9537 0.456177C8.31954 0.456177 2.0039 6.04438 0.953708 13.3138H10.7566C11.6046 11.3002 13.6122 9.88478 15.9538 9.88478C18.2953 9.88478 20.3029 11.3002 21.151 13.3138ZM0.800323 15.4562L0.800335 15.4374V15.4749L0.800323 15.4562ZM15.8938 18.7114C17.7185 18.7114 19.1977 17.2471 19.1977 15.4409C19.1977 13.6346 17.7185 12.1704 15.8938 12.1704C14.069 12.1704 12.5898 13.6346 12.5898 15.4409C12.5898 17.2471 14.069 18.7114 15.8938 18.7114Z" fill="#f0f0f0"/>
             </svg></a>
         <a href="https://github.com/dev-LuisSM/PokeApiJs" target="blank"><i class="fab fa-github"></i></a>
         <a href="https://dribbble.com/shots/17616780-Pok-dex" target="blank"><i class="fab fa-dribbble"></i></a>
         <a href="https://www.behance.net/gallery/104011053/Pokdex/modules/597809185"><i class="fab fa-behance"></i></a>
     </div>
 </body>
+
 <footer>
-    <script src="./js/pokeapi.js"></script>
+    <script src="./js/types.js"></script>
 </footer>
 
 </html>
